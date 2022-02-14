@@ -3,7 +3,7 @@
 
 
 ## 📇 Index
-- [Java Basic](https://github.com/bboygg/Java-Notes/java Basic.md)
+- [Java Basic](https://github.com/bboygg/Java-Notes/blob/main/Java%20Basic.md)
 - [Java Container](https://github.com/bboygg/java Basic.md)
 - [Java Concurrency](https://github.com/bboygg/java Basic.md)
 - [Java Virtual Machine](https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20虚拟机.md)
