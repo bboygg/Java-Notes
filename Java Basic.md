@@ -32,3 +32,18 @@
   - **fields**: data variables which determine the status of the class or an object (e.g. )
   - **methos**: executable code of the class built from statemets. It allows us to manipulate/change the status of an object or access the value of the data member
   - **nested classes and nested interfaces** 
+
+**Sample class**
+```java
+class Pencil {
+  public String color = "red";
+  public int length;
+  public float diameter;
+  
+  pulbic static long nextID = 0;
+  
+  public void setColor (String newColor) {
+    color = new Color;
+  }
+
+```
