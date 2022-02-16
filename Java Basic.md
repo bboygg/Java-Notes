@@ -33,7 +33,7 @@ public class HelloWorld {
 ### Compile the program
 - compile HelloWrold.java by using the following command:
 ```shell
-java HelloWorld.java
+javac HelloWorld.java
 
 # It generates a file named HelloWrold.class
 ```
