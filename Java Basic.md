@@ -1,6 +1,63 @@
 # Java Basics
 
 
+## 0. Getting Started 🚀
+
+### Pre-request
+
+- Install JDK
+Run bellow command in terminal window to verify you installed jdk correctly.
+```shell
+java --version
+```
+- Install IDE
+  - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=mac)
+  - [Eclipse](https://www.eclipse.org/downloads/)
+
+
+### Create the source file
+- Open a text editor, type in code which defines a class HelloWorld and then save it int a file HelloWorld.java
+- file and class name are case sensitive and must be matched exactly(except .java part)
+
+**Example Code: HelloWorld.java**
+```java
+// The HelloWorld class implements an application
+// that displays "Hello World!" to the standard output
+public class HelloWorld {
+	public static void main(String[] args) {
+		//Display "Hello World!"
+		System.out.println("Hello World!");
+	}
+}
+```
+### Compile the program
+- compile HelloWrold.java by using the following command:
+```shell
+java HelloWorld.java
+
+# It generates a file named HelloWrold.class
+```
+
+### Run the program
+- run the code through:
+```shell
+java HelloWorld
+
+#It will return Hello World!
+```
+- Note that the command is java, not javac, and you refer to HelloWorld, not HelloWorld.java or HelloWorld.class
+
+😢 Exception in thread "main" java.lang.NoClassDefFoundError: HelloWorld
+
+If you see this error, you may need to set the environment variable CLASSPATH
+
+
+
+
+
+
+
+
 ## 1. DataTypes
 
 ### Primitive Type
