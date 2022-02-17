@@ -58,12 +58,28 @@ If you see this error, you may need to set the environment variable CLASSPATH
 
 
 
-## 1. DataTypes
+## 1. Data Types
 
-### Primitive Type
+### Primitive Types
+- byte : 8bits (1byte)
+- char : 16bits (2byte)
+- short : 16bits (2byte)
+- int : 32bits
+- float : 32bits
+- long : 64bits
+- double : 62bits
+- boolean : 1bit
 
+
+ 📚[Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)\
+ 📚[Package java.lang](https://docs.oracle.com/javase/9/docs/api/java/lang/package-use.html)\
+ ❓ [Why single character file saved as 8bits(1byte) not 16bits? - Answers about UTF-16 UTF-8](https://stackoverflow.com/questions/24095187/char-size-8-bit-or-16-bit)
+ 
 
 ### Wrapper Class
+
+📚[Autoboxing and Unboxing](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html)\
+📚[The Numbers Classes](https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html)
 
 ### Buffer Pool
 
