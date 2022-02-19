@@ -116,7 +116,11 @@ class Pencil {
   pulbic static long nextID = 0;
   
   public void setColor (String newColor) {
-    color = new Color;
+  	color = newColor;  
+  }
+  
+  public void getColor() {
+  	return color;
   }
 
 ```
