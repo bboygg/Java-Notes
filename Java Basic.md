@@ -92,7 +92,8 @@ If you see this error, you may need to set the environment variable CLASSPATH
 - Procedural programming concentrates on creating function, while OOP starts from isloating the classes, and then look for the methods inside them.
 - Procedural programming sperates the data of the program from the operations that manipulate the data, while OOP focus on both of them.
 
-<img width="777" alt="Procedural vs OOP" src="https://user-images.githubusercontent.com/78633515/154190442-5634e1ab-a8a3-4716-8af8-c051faee8078.png">
+
+<img src="assets/OOPvsProcedural.png" alt="Procedural vs OOP" width="500"/>
 
 ### Concepts of Class and Object
 
