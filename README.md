@@ -16,7 +16,9 @@
 
 ## :bookmark_tabs: Reference
 
-- [CyC2018/CS-Notes](https://github.com/CyC2018/CS-Notes)
-- [MIT Introduction to Java](https://www.youtube.com/watch?v=oqnLQVFaqYI&list=PLXqaWKDQpdPn4UJ2fOFxl6Yl_DC51FFUL&ab_channel=BarbaraHecker)
-- [Oracle Java Tutorial](https://docs.oracle.com/javase/tutorial/)
+- [CyC2018/CS-Notes](https://github.com/CyC2018/CS-Notes) 🀄️
+- [MIT Introduction to Java](https://www.youtube.com/watch?v=oqnLQVFaqYI&list=PLXqaWKDQpdPn4UJ2fOFxl6Yl_DC51FFUL&ab_channel=BarbaraHecker) 🏫
+- [Oracle Java Tutorial](https://docs.oracle.com/javase/tutorial/) ☕️
+
+- [Github Markdown Guide](https://www.markdownguide.org/basic-syntax/) 📝
 
