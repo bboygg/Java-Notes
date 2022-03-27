@@ -203,6 +203,33 @@ System.out.println(z == k);   // true
 ## 2. String  
 
 ### Overview
+String is declared as final, so it is not inheritable. (Wrapper classes such as Integer cannot be inherited either)
+	
+In Java 8, String internally uses char array to store data.
+```java
+public final class String
+    implements java.io.Serializable, Comparable<String>, CharSequence {
+    /** The value is used for character storage. */
+    private final char value[];
+}
+	
+```
+
+After Java 9, implementations of the String class use byte arrays instead to store strings, and use a coder to identify which encoding is used.
+```java
+public final class String
+    implements java.io.Serializable, Comparable<String>, CharSequence {
+    /** The value is used for character storage. */
+    private final byte[] value;
+
+    /** The identifier of the encoding used to encode the bytes in {@code value}. */
+    private final byte coder;
+}
+	
+```
+
+The value array is declared final, which means that after the value array is initialized, no other arrays can be referenced. And there is no method inside String to change the value array, so String is guaranteed to be immutable.
+
 
 ### Immutable
 
