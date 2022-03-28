@@ -85,7 +85,7 @@ boolean 只有两个值：true、false，可以使用 1 bit 来存储，但是�
 Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf)  
  ❓ [Why single character file saved as 8bits(1byte) not 16bits? - Answers about UTF-16 UTF-8](https://stackoverflow.com/questions/24095187/char-size-8-bit-or-16-bit)  
  <br>
- 
+
 
 ### Wrapper Class
 
@@ -230,8 +230,33 @@ public final class String
 
 The value array is declared final, which means that after the value array is initialized, no other arrays can be referenced. And there is no method inside String to change the value array, so String is guaranteed to be immutable.
 
-
 ### Immutable
+
+**1. Cahing Hashcode**
+
+Since the hash value of String is often used, for example, String is used as the key of Hash Map. The immutable feature can make the hash value also immutable, so only required calculate one time. 
+
+
+
+**2. Requirement of String Pool**
+
+If a String object has already been created, a reference is taken from the String Pool. Using String Pool is only possible if String is immutable.
+
+
+
+**3. Security**
+
+String is often used as a parameter, and String immutability ensures that the parameter is immutable. For example, When String variable used as a network connection parameter, then in the process of network connection, If String is changed, and the part of changed String thinks that it is now connected to another host, but the actual situation is not like that.
+
+
+
+**4. Thread Safe**
+
+String immutability is inherently thread-safe and can be used safely across multiple threads.
+
+[Program Creek : Why String is immutable in Java?](https://www.programcreek.com/2013/04/why-string-is-immutable-in-java/)
+
+
 
 ### String, StringBuffer and StringBuilder
 
