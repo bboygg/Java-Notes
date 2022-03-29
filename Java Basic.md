@@ -232,7 +232,7 @@ The value array is declared final, which means that after the value array is ini
 
 ### Immutable
 
-**1. Cahing Hashcode**
+**1. Caching Hashcode**
 
 Since the hash value of String is often used, for example, String is used as the key of Hash Map. The immutable feature can make the hash value also immutable, so only required calculate one time. 
 
@@ -259,6 +259,21 @@ String immutability is inherently thread-safe and can be used safely across mult
 
 
 ### String, StringBuffer and StringBuilder
+
+**1. Mutability**
+
+- String is immutable
+- StringBuffer and StringBuilder is mutable
+
+**2. Thread Safety**
+
+- String is immutable, and therefore thread-safe
+- StringBuilder is not thread safe
+- StringBuffer is thread-safe and uses synchronized internally for synchronization
+
+[StackOverflow : String, StringBuffer, and StringBuilder](https://stackoverflow.com/questions/2971315/string-stringbuffer-and-stringbuilder)
+
+
 
 ### String Pool
 
