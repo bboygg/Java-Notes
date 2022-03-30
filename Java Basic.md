@@ -277,6 +277,41 @@ String immutability is inherently thread-safe and can be used safely across mult
 
 ### String Pool
 
+String pool is nothing but a storage area in Java heap where string literals stores. It is also known as String Intern Pool or String Constant Pool. It is just like object allocation. By default, it is empty and privately maintained by the Java String class. Whenever we create a string the string object occupies some space in the heap memory. Creating a number of strings may increase the cost and memory too which may reduce the performance also.
+
+The JVM performs some steps during the initialization of string literals that increase the performance and decrease the memory load. To decrease the number of String objects created in the JVM the String class keeps a pool of strings.
+
+When we create a string literal, the JVM first check that literal in the String pool. If the literal is already present in the pool, it returns a reference to the pooled instance. If the literal is not present in the pool, a new String object takes place in the String pool.
+
+```java
+//Using String Literal
+String s1 = "Python";
+String s2 = "Data Science";
+String s3 = "Python";
+
+System.out.println(s1 == s3) //true
+System.out.println(s2 == s3) //false
+
+//Using new Keyword
+String s4 = new String("Java");
+String s5 = new String("C++");
+String s6 = new String("Data Science");
+String s7 = new String("Data Science").intern();
+
+System.out.println(s2 == s6) //false
+System.out.println(s2 == s7) //true
+
+```
+<img src="/home/george/repo/Java-Notes/assets/String Pood Concept in Java.png" alt="Concept of String Pool in Java" width="500"/>
+
+
+
+
+
+[StackOverflow : What is String interning?](https://stackoverflow.com/questions/10578984/what-is-java-string-interning)
+[JavaPoint: String Pool in Java](https://www.javatpoint.com/string-pool-in-java)
+
+
 ### new String("abc")
 
 📚 ![StackOverFlow: Differences between new Integer(123), Integer.valueOf(123) and just 123](https://stackoverflow.com/questions/9030817/differences-between-new-integer123-integer-valueof123-and-just-123)  
