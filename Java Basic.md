@@ -302,7 +302,7 @@ System.out.println(s2 == s6) //false
 System.out.println(s2 == s7) //true
 
 ```
-<img src="/home/george/repo/Java-Notes/assets/String Pood Concept in Java.png" alt="Concept of String Pool in Java" width="500"/>
+<img src="assets/String Pood Concept in Java.png" alt="Concept of String Pool in Java" width="500"/>
 
 
 
